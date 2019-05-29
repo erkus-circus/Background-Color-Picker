@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+            }
+            h1 {
+                font-size: 5vw;
+            }
+            div {
+                text-align: center;
+                float: left;
+                height: 101%;
+                width: 33.333%;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <span id="info">
+            &rArr;
+            click for random RGB Color. double-click for RGB input. Current (R,G,B) Color: <span id="color">(0,0,0)</span>
+        </span>
+        <div id="predicted-text">
+            <h1>Predicted Color</h1>
+            <p>
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                abcdefghijklmnopqrstuvwxyz<br>
+                0123456789
+            </p>
+        </div>
+
+        <div id="text" style="background: black;">
+            <h1>Opposite Color</h1>
+            <p>
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                abcdefghijklmnopqrstuvwxyz<br>
+                0123456789
+            </p>
+        </div>
+
+        <div id="inverted-text">
+            <h1>Inverted Color</h1>
+            <p>
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                abcdefghijklmnopqrstuvwxyz<br>
+                0123456789
+            </p>
+        </div>
+
+        <script src="./build/build.js"></script>
+    </body>
+</html>
