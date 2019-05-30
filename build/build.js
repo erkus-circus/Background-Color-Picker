@@ -33,8 +33,6 @@ function parseColor(a, b, c) {
     // set info to same color so you can still read it.
     $('color').innerHTML = "(" + a + "," + b + "," + c + ")";
     $('info').style.color = "black";
-    // set inverted texts background
-    $("inverted-text").style.backgroundColor = "rgb(" + (255 - a) + "," + (255 - b) + "," + (255 - c) + ")";
 }
 onclick = function () { return parseColor(Math.floor(Math.random() * 256), Math.floor(Math.random() * 256), Math.floor(Math.random() * 256)); }; // set random color when clicked
 ondblclick = function () {
