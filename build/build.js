@@ -36,7 +36,7 @@ function parseColor(a, b, c) {
     // set inverted texts background
     $("inverted-text").style.backgroundColor = "rgb(" + (255 - a) + "," + (255 - b) + "," + (255 - c) + ")";
 }
-onclick = ontouchend = function () { return parseColor(Math.floor(Math.random() * 256), Math.floor(Math.random() * 256), Math.floor(Math.random() * 256)); }; // set random color when clicked
+onclick = function () { return parseColor(Math.floor(Math.random() * 256), Math.floor(Math.random() * 256), Math.floor(Math.random() * 256)); }; // set random color when clicked
 ondblclick = function () {
     parseColor((prompt("Red Input", "0")), (prompt("Green Input", "0")), (prompt("Blue Input", "0"))); // ask for input if color when double clicked
 };
